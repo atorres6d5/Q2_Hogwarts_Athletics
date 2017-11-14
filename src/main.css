@@ -1,20 +1,49 @@
 body{
-  background-color: #8B8C89
+  background-color: #071A80
 }
 
 
 header{
-  color: #E7ECEF
+  color: #F1F31C
 }
 
-nav{
-  color: #6096BA
+.athalete img{
+  max-width: 250px;
+  max-height: 225px;
+}
+
+
+.athalete{
+  background-color: #6096BA;
+  padding-top: 1rem;
+  border: solid black 2rem;
 }
 
 .jumbotron{
-  background-color: #274C77
+  background-color: #941B08
 }
 
 .roster{
   margin-top: 4rem
+}
+
+#gryffindor{
+  background-color:#740001;
+  color: #d3a625;
+
+}
+
+#hufflepuff{
+  background-color: #ecb939;
+  color: #372e29
+}
+
+#ravenclaw{
+  background-color: #0e1a40;
+  color:#946b2d;
+}
+
+#slytherin{
+  background-color: #1a472a;
+  color: #aaaaaa;
 }
