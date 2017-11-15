@@ -7,6 +7,16 @@ header{
   color: #F1F31C
 }
 
+table.table.matches{
+  background-color: orange
+}
+
+.heading{
+  background-color: black;
+  color: white
+}
+
+
 .athalete img{
   max-width: 250px;
   max-height: 225px;
