@@ -1,7 +1,9 @@
 body{
   background-color: #071A80
 }
-
+form{
+  color: white;
+}
 
 header{
   color: #F1F31C

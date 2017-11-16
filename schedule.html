@@ -58,6 +58,34 @@
       <tbody id="allData">
       </tbody>
     </table>
+    <div class="container">
+      <form class="row justify-content-around" action="index.html" method="post">
+        <p>Home Team</p>
+        <select class="col-2 homeTeam" name="homeTeam">
+          <option value="Gryffindor">Gryffindor</option>
+          <option value="Hufflepuff">Hufflepuff</option>
+          <option value="Ravenclaw">Ravenclaw</option>
+          <option value="Slytherin">Slytherin</option>
+        </select>
+        <p>Away Team</p>
+        <select class="col-2 awayTeam" name="awayTeam">
+          <option value="Gryffindor">Gryffindor</option>
+          <option value="Hufflepuff">Hufflepuff</option>
+          <option value="Ravenclaw">Ravenclaw</option>
+          <option value="Slytherin">Slytherin</option>
+        </select>
+        <button type="button" name="create">Create New Match</button>
+      </form>
+      <form class="row justify-content-start" action="index.html" method="post">
+        <p>Delete Match By Match ID</p>
+        <select class="del" name="matchID">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </form>
+    </div>
 
   </body>
 </html>
