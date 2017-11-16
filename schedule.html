@@ -62,19 +62,20 @@
       <form class="row justify-content-around" action="index.html" method="post">
         <p>Home Team</p>
         <select class="col-2 homeTeam" name="homeTeam">
-          <option value="Gryffindor">Gryffindor</option>
-          <option value="Hufflepuff">Hufflepuff</option>
-          <option value="Ravenclaw">Ravenclaw</option>
-          <option value="Slytherin">Slytherin</option>
+          <option value="1">Gryffindor</option>
+          <option value="2">Hufflepuff</option>
+          <option value="3">Ravenclaw</option>
+          <option value="4">Slytherin</option>
         </select>
         <p>Away Team</p>
         <select class="col-2 awayTeam" name="awayTeam">
-          <option value="Gryffindor">Gryffindor</option>
-          <option value="Hufflepuff">Hufflepuff</option>
-          <option value="Ravenclaw">Ravenclaw</option>
-          <option value="Slytherin">Slytherin</option>
+          <option value="1">Gryffindor</option>
+          <option value="2">Hufflepuff</option>
+          <option value="3">Ravenclaw</option>
+          <option value="4">Slytherin</option>
         </select>
-        <button type="button" name="create">Create New Match</button>
+        <input type="datetime" name="matchDate" placeholder="mm/dd/yyyy" id="dateTime">
+        <button type="button" name="create" id="makeNewMatch">Create New Match</button>
       </form>
       <form class="row justify-content-start" action="index.html" method="post">
         <p>Delete Match By Match ID</p>
