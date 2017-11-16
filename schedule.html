@@ -52,6 +52,7 @@
           <th scope="col">Match #</th>
           <th scope="col">Home Team</th>
           <th scope="col">Away Team</th>
+          <th scope="col">Match Date</th>
           <th scope="col">Result</th>
         </tr>
       </thead>
@@ -74,17 +75,14 @@
           <option value="3">Ravenclaw</option>
           <option value="4">Slytherin</option>
         </select>
+        <p>Match Date</p>
         <input type="datetime" name="matchDate" placeholder="mm/dd/yyyy" id="dateTime">
         <button type="button" name="create" id="makeNewMatch">Create New Match</button>
       </form>
       <form class="row justify-content-start" action="index.html" method="post">
-        <p>Delete Match By Match ID</p>
-        <select class="del" name="matchID">
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-        </select>
+        <p class="col-2">Delete Match By Match ID</p>
+        <input class="col-2" type="text" name="DeleteMatch" placeholder="Match #" id="matchID">
+        <button class="col-2 offset-md-2" type="button" name="Delete" id="delButton">Delete Match</button>
       </form>
     </div>
 

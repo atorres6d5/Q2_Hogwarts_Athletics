@@ -2,10 +2,10 @@ let devPath = 'http://localhost:3000/hogwarts'
 
 let tableBody = document.querySelector('#allData')
 let newMatchButton = document.querySelector('#makeNewMatch')
-
+let delButton = document.querySelector('#delButton')
 
 let schedule = () =>{
-  console.log('???');
+  console.log('scheule is up to date!');
   axios.get(`${devPath}/Matches`)
   .then(result=>{
   tableBody.innerHTML = makeTableBody(result.data)
@@ -19,7 +19,7 @@ console.log(dateTime.value);
 let makeTableBody = (data)=>{
   let html = ''
   data.forEach(row=>{
-    html += `<tr><th scope="row">${row.id}</th><td>${row.home_team}</td><td>${row.away_team}</td><td>${row.winner}</td></tr>`
+    html += `<tr><th scope="row">${row.id}</th><td>${row.home_team}</td><td>${row.away_team}</td><td>${row.match_date}</td><td>${row.winner}</td></tr>`
   })
   //console.log(stuff);
   return html
@@ -39,4 +39,10 @@ newMatchButton.addEventListener('click', ()=>{
   axios.post(`${devPath}/matches`, input)
   .then(result=> schedule())
 
+})
+
+delButton.addEventListener('click', ()=>{
+  let matchID= document.querySelector('#matchID').value
+  axios.delete(`${devPath}/matches/${matchID}`)
+  .then(result=> schedule())
 })
