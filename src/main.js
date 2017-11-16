@@ -6,7 +6,7 @@ let captains = () =>{
   axios.get(`${devPath}/teams/captains`)
   .then(result=>{
     gryffCap.innerHTML=reslut
-    console.log(result)
+    //console.log(result)
     //gryffCap.innerHTML = `${result.data[0]}`
   })
 }
@@ -17,7 +17,6 @@ let captains = () =>{
 //
 // }
 
-captains()
 
 
 //  let oneTeam =(id)=>{
